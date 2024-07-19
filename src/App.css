@@ -114,7 +114,7 @@ p{
   text-align: center;
 }
 
-#inicio .presentacion .descripcion {
+#inicio .presentacion .descripcion {  
   max-width: 700px;
   margin: 25px auto;
   font-size: 25px;
@@ -166,7 +166,8 @@ p{
   background-color: bisque;
 }
 
-#sobremi .sobremi {
+#sobremi .sobremi {  
+  text-align: center;
   margin: 0 20px;
 }
 
@@ -237,7 +238,20 @@ p{
   color:white;
   box-shadow: none;
 }
-
+.boton-mostrar{
+  background-color: rgb(252, 242, 230);
+  display: block;
+  margin: auto;
+  padding: 20px 25px;
+  border: 2px solid bisque;
+  border-radius: 50px;
+  color:black;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: .5s;
+  padding: 5px 5px !important;
+  
+}
 
 
 /* ---------------- */
@@ -307,6 +321,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 
 }
 
@@ -335,8 +350,12 @@ footer{
 
 }
 
+.lista{
+  font-size: small;
+}
+
 /* no funciona bien  */
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   header{
     width: 100%;
   }
@@ -345,7 +364,7 @@ footer{
   }
   #sobremi{
     /* display: flex; */
-    width: 880px;
+    /* width: 880px;
   }
   #sobremi .contenedor-foto{
   min-width: 200px;
@@ -378,4 +397,4 @@ footer{
     color: rgb(255, 253, 253);
   }
 }
-
+ */ 

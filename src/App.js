@@ -6,7 +6,7 @@ import Inicio from './Inicio';
 import SobreMi from './SobreMi';
 import Contacto from './Contacto';
 import Footer from './Footer';
-
+import Button from './Button.js';
 
 function App() {
   const company = "curriculum vitae";
@@ -17,6 +17,7 @@ function App() {
       <Header />
       <Inicio />
       <SobreMi />
+      <Button/>
       <Contacto />
       <Footer company={company} year={year} /> 
     </div>
