@@ -5,6 +5,7 @@ const Contacto = () =>{
     const [nombre, setNombre] = useState('')
     const [correo, setCorreo] = useState('')
     const [errores, setErrores] = useState({})
+    const [mensajeEnviado, setMensajeEnviado] = useState(false);
 
     const manejarCambiosEnNombre = (event) => {
         setNombre(event.target.value)
@@ -29,7 +30,8 @@ const manejarEnvioForm = (event) => {
     event.preventDefault()
     if (validarFormulario()) {
         console.log('Datos del formulario:', {nombre, correo})
-    }}
+        setMensajeEnviado(true);
+      }}
     return(
         <section id="contacto">
         <p className="titulo-seccion">Contactame </p>
@@ -62,6 +64,11 @@ const manejarEnvioForm = (event) => {
         </div>
       <button className="download-cv" type="submit">Enviar mensaje</button>
     </form>
+    {mensajeEnviado && (
+          <div className="mensaje-gracias">
+            <p>¡Gracias, {nombre}! Tu mensaje ha sido enviado.</p>
+          </div>
+        )}
     </div>
     </section>
     )

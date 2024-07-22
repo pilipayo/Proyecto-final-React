@@ -77,7 +77,7 @@ const SobreMi = () => {
         <br/>
         <button className="download-cv">
           <a
-            href= {cv} target="_blank" rel="noopener noreferrer" download="CV PAYO PILAR 2024"
+            href= {cv} target="_blank" download="CV PAYO PILAR 2024"
           >
             Descargar CV
           </a>

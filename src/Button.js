@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 function Button() {
   /*Estado para mostrar u ocultar*/
-  const [mostrarComponente, setMostrarComponente] = useState(true);
+  const [mostrarComponente, setMostrarComponente] = useState(false);
   return (
     <>
       {/*Con un estado adicional le dicen cuando mostrarse o no*/}
@@ -27,7 +27,7 @@ function Button() {
       </Card.Body>
     </Card>
         }
-        <br></br>
+  <br></br>
       </div>
     </>
   );
