@@ -265,18 +265,18 @@ p{
 /* Media queries para pantallas más pequeñas */
 @media (max-width: 768px) {
   #sobremi {
-    flex-direction: column; /* Cambia la dirección del flex a columna en pantallas pequeñas */
-    align-items: center; /* Centra los elementos */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   #sobremi .contenedor-foto {
-    margin-bottom: 20px; /* Espacio entre la foto y el texto en vistas móviles */
-    flex: none; /* Permite que la foto ocupe solo el ancho necesario */
+    margin-bottom: 20px; 
+    flex: none; 
   }
 
   #sobremi .sobremi {
-    text-align: center; /* Centra el texto en pantallas pequeñas */
-    max-width: 100%; /* Ajusta el ancho máximo al tamaño de la pantalla */
+    text-align: center; 
+    max-width: 100%; 
   }
 }
 /* ---------------- */
